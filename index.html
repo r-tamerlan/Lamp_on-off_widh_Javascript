@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lamp on - off</title>
+    <script type="text/javascript">
+        function duymeyebasma() {
+
+            if (document.getElementById("button").value == "on") {
+                document.getElementById("lamp").src = "on.jpg";
+                document.getElementById("button").value = "off";
+                document.getElementById("text").value = "💡 İşıq yanır ";
+            } else {
+                document.getElementById("button").value = "on";
+                document.getElementById("lamp").src = "off.jpg";
+                document.getElementById("text").value = "🖲 İşıq Sönüb  "
+            }
+        }
+    </script>
+
+</head>
+<div id="tam">
+    <div><img id="lamp" src="off.jpg"></div>
+    <div><input id="button" type="button" value="on" onClick="duymeyebasma()"></div>
+</div>
+<input id="text" type="text" value="🖲 İşıq Sönüb">
+
+<body>
+</body>
+
+</html>
